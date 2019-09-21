@@ -1,0 +1,213 @@
+<!-- https://www.w3schools.com/bootstrap4/bootstrap_templates.asp -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Philippe Casgrain - Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+
+
+<!--   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59107063-1', 'auto');
+    ga('send', 'pageview');
+  </script> 
+-->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- Import Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Import Marked Markdown Renderer -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<!-- Import Citation.js -->
+<script src="https://cdn.rawgit.com/larsgw/citation.js/archive/citation.js/citation-0.4.0-9.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/pcooksey/bibtex-js/a802616/src/bibtex_js.js"></script>
+
+
+<!-- Import Page Content -->
+<script src="content.js"></script>
+
+
+<!-- Bibliography Stuff Here -->
+
+<!-- Define Bibliography Style -->
+<li class="bibtex_template list-group-item">
+ <div class="m-2">
+  <div>
+    <span class="title" style="font-weight: bold"></span>
+    <br>
+    by <span class="author" style="font-style: italic"></span>
+  </div>
+
+  <hr class="my-0 invisible">
+  <div class="if journal">
+    <span class="journal"></span> (<span class="year" style="font-style: italic"></span>) 
+  </div>
+
+  <hr class="my-1 invisible">
+
+  <div class="if pdflink">
+   <a class="bibtexVar btn btn-primary btn-sm border-dark" href="+pdflink+" extra="pdflink">Download pdf</a>
+ </div>
+
+</div>
+</li>
+
+<div class="bibtex_structure">
+  <div class="sort year" extra="DESC number">
+    <div class="templates"></div>
+  </div>
+</div>
+
+
+<!-- Import Bibliographic Entries -->
+
+<!-- <bibtex src="Casgrain_bibfile.bib"></bibtex> -->
+
+<textarea id="bibtex_input" style="display:none;">
+  
+@article{casgrain2019deep,
+  title={Deep Q-Learning for Nash Equilibria: Nash-DQN},
+  author={Casgrain, Philippe and Ning, Brian and Jaimungal, Sebastian},
+  journal={arXiv preprint arXiv:1904.10554},
+  year={2019},
+  pdflink={http://arxiv.org/pdf/1904.10554}
+}
+
+@article{casgrain2018algorithmic,
+  title={Algorithmic trading with partial information: A mean field game approach},
+  author={Casgrain, Philippe and Jaimungal, Sebastian},
+  journal={arXiv preprint arXiv:1803.04094},
+  year={2018},
+  pdflink={http://arxiv.org/pdf/1803.04094}
+}
+
+@article{casgrain2019bayesian,
+  title={A Bayesian Variational Framework for Stochastic Optimization},
+  author={Casgrain, Philippe},
+  journal={arXiv preprint arXiv:1905.01707},
+  year={2019},
+  pdflink={http://arxiv.org/pdf/1905.01707}
+}
+
+@article{casgrain2018mean,
+  title={Mean-field games with differing beliefs for algorithmic trading},
+  author={Casgrain, Philippe and Jaimungal, Sebastian},
+  journal={arXiv preprint arXiv:1810.06101},
+  year={2018},
+  pdflink={http://arxiv.org/pdf/1810.06101}
+}
+
+@article{casgrain2019trading,
+  title={Trading algorithms with learning in latent alpha models},
+  author={Casgrain, Philippe and Jaimungal, Sebastian},
+  journal={Mathematical Finance},
+  volume={29},
+  number={3},
+  pages={735--772},
+  year={2019},
+  publisher={Wiley Online Library},
+  pdflink={http://arxiv.org/pdf/1806.04472}
+}
+
+</textarea>
+
+
+</head>
+<body>
+
+  <div class="container my-3" >
+
+    <div class="row"> 
+      <div class="col-md-5"> 
+        <div class="">
+          <h2 class="text-center">Philippe Casgrain</h2>
+        </div>
+
+        <hr class="my-3">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5">
+
+        <div class="container rounded border-dark my-1">
+
+          <hr class="my-1 invisible">
+
+          <img src="philippe_headshot.jpg" class="img-fluid img-thumbnail rounded w-50 mx-auto d-block border border-dark" alt="Photo of Me">
+
+          <hr class="my-3 invisible">
+
+          <div class="m-3" id="about-me"></div>
+          <script>
+            document.getElementById('about-me').innerHTML = marked(aboutText);
+          </script>
+
+          <hr class="my-3">
+
+          <div id="contact" class="m-3" style="min-width:300px;"></div>
+          <script>
+            document.getElementById('contact').innerHTML = marked(contactText);
+          </script>
+
+          <hr class="my-2">
+
+          <div class="m-3" >
+            <a href="CV_Casgrain.pdf" class="btn btn-primary btn-block border-dark" role="button" aria-pressed="true">Download my CV</a>
+          </div>
+
+          <hr class="my-1">
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-7">
+
+        <div class="container mx-4">
+
+          <div class="mx-3" id="research-interests"></div>
+          <script>
+            document.getElementById('research-interests').innerHTML = marked(researchInterestsTxt);
+          </script>
+
+          <hr class="my-3 invisible">
+
+          <div class="card">
+
+            <h4 class="card-header"> Articles and Preprints</h4>
+
+            <ul id="bibtex_display" class="list-group list-group-flush"></ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
