@@ -4,7 +4,7 @@
 aboutText = 
 '#### About Me  \n' +
 'I am currently a quantitative researcher working on algorithmic execution at [Citadel Asset Management](https://www.citadel.com/) in New York City.  \n\n' +
-'I completed my PhD in 2018 in the [Department of Statistical Sciences](http://www.utstat.toronto.edu/) at the University of Toronto, under the supervision of [Sebastian Jaimungal](http://sebastian.statistics.utoronto.ca/).';
+'Previously, I was a PhD student in the [Department of Statistical Sciences](http://www.utstat.toronto.edu/) at the University of Toronto, under the supervision of [Sebastian Jaimungal](http://sebastian.statistics.utoronto.ca/), and a graduate research fellow at the [Vector Institute for Artificial Intelligence](https://vectorinstitute.ai/) working in the [Dan Roy](http://danroy.org/) lab.';
 
 // Contact Info
 emailE = 'mail.utoronto.ca'
