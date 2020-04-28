@@ -8,8 +8,8 @@ aboutText =
 'I completed my PhD in the [Department of Statistical Sciences](http://www.utstat.toronto.edu/) at the University of Toronto in 2018, under the supervision of [Sebastian Jaimungal](http://sebastian.statistics.utoronto.ca/). During my PhD, I was a graduate research fellow in the [Roy lab](http://danroy.org/) at the [Vector Institute for Artificial Intelligence](https://vectorinstitute.ai/).';
 
 // Contact Info
-emailE = 'mail.utoronto.ca'
-emailE = ('pcasgrain' + '@' + emailE)
+emailE = 'math.ethz.ch'
+emailE = ('philippe.' + 'casgrain' + '@' + emailE)
 
 contactText = 
 '#### Links and Contact \n' +  
