@@ -1,0 +1,259 @@
+<!-- https://www.w3schools.com/bootstrap4/bootstrap_templates.asp -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Philippe Casgrain</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148468978-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148468978-1');
+  </script>
+
+  <meta name="description" content="The personal web page of Philippe Casgrain. About, Research, CV, Contact." />
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- Import Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Import Marked Markdown Renderers -->
+<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked@1.0.0/marked.min.js"></script>
+
+
+<!-- Import Citation.js -->
+<!-- <script src="https://cdn.rawgit.com/larsgw/citation.js/archive/citation.js/citation-0.4.0-9.min.js"></script> -->
+<script type="text/javascript" src="https://cdn.rawgit.com/pcooksey/bibtex-js/a802616/src/bibtex_js.js"></script>
+
+
+<!-- Import Page Content -->
+<script src="content.js"></script>
+
+
+<!-- Bibliography Stuff Here -->
+
+<!-- Define Bibliography Style -->
+<div stype='display:none;'>
+  <li class="bibtex_template list-group-item">
+   <div class="my-2">
+    <div>
+      <span class="title" style="font-weight: bold"></span>
+      <br> by  
+      <span class="author" style="font-style: italic"></span>
+    </div>
+
+    <hr class="my-0 invisible">
+    <div class="if journal">
+      <span class="journal"></span> (<span class="year" style="font-style: italic"></span>) 
+    </div>
+
+    <div class="if award">
+      <hr class="my-1 invisible">
+      <span class="award" style="font-style: bold"></span>
+    </div>
+
+    <hr class="my-0 invisible">
+
+    <div class="if booktitle">
+      <span class="booktitle"></span> (<span class="year" style="font-style: italic"></span>) 
+    </div>
+
+    <hr class="my-1 invisible">
+
+    <div class="if pdflink">
+     <a class="bibtexVar btn btn-primary btn-sm border-dark" href="+pdflink+" extra="pdflink">Download pdf</a>
+   </div>
+ </div>
+</li>
+</div>
+
+
+<div class="bibtex_structure">
+  <div class="sort year" extra="DESC number">
+    <div class="templates"></div>
+  </div>
+</div>
+
+
+<!-- Import Bibliographic Entries -->
+
+<!-- <bibtex src="Casgrain_bibfile.bib"></bibtex> -->
+
+<textarea id="bibtex_input" style="display:none;">
+
+  @inproceedings{casgrain2019latent,
+  author = {Casgrain, Philippe},
+  booktitle = {Advances in Neural Information Processing Systems},
+  date-added = {2021-03-08 15:42:03 -0500},
+  date-modified = {2021-03-08 15:42:03 -0500},
+  pdflink = {http://arxiv.org/pdf/1905.01707},
+  title = {A Latent Variational Framework for Stochastic Optimization},
+  year = {2019}}
+
+  @article{casgrain2018algorithmic,
+  author = {Casgrain, Philippe and Jaimungal, Sebastian},
+  award = {Winner of the best finance paper award at INFORMS 2018},
+  date-added = {2021-03-08 15:42:03 -0500},
+  date-modified = {2021-03-08 15:42:03 -0500},
+  journal = {arXiv preprint arXiv:1803.04094},
+  pdflink = {http://arxiv.org/pdf/1803.04094},
+  title = {Algorithmic trading with partial information: A mean field game approach},
+  year = {2018}}
+
+  @article{casgrain2019deep,
+  author = {Casgrain, Philippe and Ning, Brian and Jaimungal, Sebastian},
+  date-added = {2021-03-08 15:42:03 -0500},
+  date-modified = {2021-03-08 15:42:03 -0500},
+  journal = {arXiv preprint arXiv:1904.10554},
+  pdflink = {http://arxiv.org/pdf/1904.10554},
+  title = {Deep Q-Learning for Nash Equilibria: Nash-DQN},
+  year = {2019}}
+
+  @article{casgrain2018mean,
+  author = {Casgrain, Philippe and Jaimungal, Sebastian},
+  award = {Winner of the best paper award at SIAM FM19},
+  date-added = {2021-03-08 15:42:03 -0500},
+  date-modified = {2021-03-08 15:42:03 -0500},
+  journal = {Mathematical Finance},
+  pdflink = {http://arxiv.org/pdf/1810.06101},
+  title = {Mean-field games with differing beliefs for algorithmic trading},
+  year = {2020}}
+
+  @article{casgrain2020optimizing,
+  author = {Casgrain, Philippe and Kratsios, Anastasis},
+  date-added = {2021-03-08 15:42:03 -0500},
+  date-modified = {2021-03-08 15:42:03 -0500},
+  journal = {arXiv preprint arXiv:2101.00041},
+  pdflink = {https://arxiv.org/abs/2101.00041},
+  title = {Optimizing Optimizers: Regret-optimal gradient descent algorithms},
+  year = {2020}}
+
+  @article{casgrain2019trading,
+  author = {Casgrain, Philippe and Jaimungal, Sebastian},
+  date-added = {2021-03-08 15:42:03 -0500},
+  date-modified = {2021-03-08 15:42:03 -0500},
+  journal = {Mathematical Finance},
+  number = {3},
+  pages = {735--772},
+  pdflink = {http://arxiv.org/pdf/1806.04472},
+  publisher = {Wiley Online Library},
+  title = {Trading algorithms with learning in latent alpha models},
+  volume = {29},
+  year = {2019}}
+
+</textarea>
+
+
+</head>
+<body>
+
+  <div class="container" >
+
+    <div class="row"> 
+      <div class="col-md-5 my-3"> 
+        <div class="">
+          <h2 class="text-center">Philippe Casgrain</h2>
+        </div>
+
+        <hr class="my-1">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5">
+
+        <div class="container my-3">
+
+          <!-- <hr class="my-1 invisible"> -->
+
+          <img src="philippe_headshot.jpg" class="img-fluid img-thumbnail rounded w-50 mx-auto d-block border border-dark" alt="Photo of Me">
+
+          <hr class="my-2 invisible">
+
+          <div class="my-3" id="about-me"></div>
+
+          <zero-md>
+          <script type="text/markdown">
+## About Me
+I am currently a Postdoctoral researcher in Zürich, Switzerland, jointly appointed between [ETH Zürich](https://math.ethz.ch/) and [Princeton University](https://orfe.princeton.edu/). 
+Previously, I was a quantitative researcher working on algorithmic trading and execution at [Citadel Asset Management](https://www.citadel.com/) in New York City.
+
+I completed my PhD in the [Department of Statistical Sciences](http://www.utstat.toronto.edu/) at the University of Toronto in 2018, under the supervision of [Sebastian Jaimungal](http://sebastian.statistics.utoronto.ca/). During my PhD, I was a graduate research fellow in the [Roy lab](http://danroy.org/) at the [Vector Institute for Artificial Intelligence](https://vectorinstitute.ai/).
+          </script>
+          </zero-md>
+
+          <hr class="my-3">
+
+          <div id="contact" class="m-3" style="min-width:300px;"></div>
+          <script>
+            document.getElementById('contact').innerHTML = marked(contactText);
+          </script>
+
+          <hr class="my-2">
+
+          <div class="my-3" >
+            <a href="CV_Casgrain.pdf" class="btn btn-primary btn-block border-dark" role="button" aria-pressed="true">Download my CV</a>
+          </div>
+
+          <hr class="my-1">
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-7">
+
+        <div class="container my-3">
+
+          <div class="m-0" id="research-interests"></div>
+
+          <zero-md>
+          <script type="text/markdown">
+## Research
+My current research interests span Mathematical Finance, Statistics and Computer Science. My dissertation was focused on problems in *mean-field games*, *stochastic control* and *statistical machine learning* stemming from algorithmic trading. My more recent work uses insights and mathematical tools from *stochastic control* to solve problems related to *stochastic optimization* and *multi-agent reinforcement learning*. 
+
+My PhD thesis, *Algorithmic Trading with Latent Models and Mean-Field Games*, which was the winner of the 2018 Univerity of Toronto Department of Statistical Sciences Doctoral award, can be found [here](https://tspace.library.utoronto.ca/bitstream/1807/95757/3/Casgrain_Philippe_201906_PhD_thesis.pdf). My most recent work can be found on [my arXiv author page](https://arxiv.org/search/?query=Casgrain&searchtype=all) or below. I am always eager to find new people to work with, please contact me if you are interested in collaborating.'
+          </script>
+          </zero-md>
+
+          <hr class="my-3 invisible">
+
+          <div class="card">
+
+            <h4 class="card-header"> Articles and Preprints</h4>
+
+            <ul id="bibtex_display" class="list-group list-group-flush"></ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
